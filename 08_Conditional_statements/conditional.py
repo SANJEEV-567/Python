@@ -205,10 +205,26 @@ if not is_closed:
     # print("not in between 10 and 50")
 
 #Q28    
-number= int(input("Enter a Number: "))
-if number > 10 or number < 50:
-    print("between 10 and 50")
+# number= int(input("Enter a Number: "))
+# if number > 10 or number < 50:
+    # print("between 10 and 50")
+
+#Q29
+is_student = True
+has_id = True
+has_ticket = True
+
+if is_student and has_id and has_ticket:
+    print("Allowed")
+
+#Q30
+age= int(input("Enter Your Age: "))
+marks= int(input("Enter your marks: "))
+has_id=True
+
+if age >= 18 and marks >= 40 and has_id:
+    print("Eligible")
 else:
-    print("not in between 10 and 50")
+    print("Not Eligible")    
 
         

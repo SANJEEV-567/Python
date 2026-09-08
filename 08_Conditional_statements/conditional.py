@@ -176,10 +176,12 @@ else:
     # print("Special")
 
 #Q23
-# your_age= int(input("your age: "))
-# has_id= False    
-# if age >= 18 and has_id :
-    # print("Allowed")
+your_age= int(input("your age: "))
+has_id= input("Do you Have id(yes/no): ")    
+if age >= 18 and has_id=="yes" :
+    print("Allowed")
+else:
+    print("Not Allowed!!!")
 
 #Q24
 # first_number= int(input("Enter first number: "))
@@ -210,12 +212,14 @@ else:
     # print("between 10 and 50")
 
 #Q29
-# is_student = True
-# has_id = True
-# has_ticket = True
+is_student = input("Are you a Student(Yes/No): ")
+has_id= input("Do you have id (Yes/No):  ")
+has_ticket = input("Do you Have Ticket(Yes/No): ")
 
-# if is_student and has_id and has_ticket:
-#     print("Allowed")
+if is_student=="yes" and has_id=="yes" and has_ticket=="yes":
+    print("Allowed")
+else:
+    print("Invalid!!!")
 
 #Q30
 age= int(input("Enter Your Age: "))

@@ -193,9 +193,9 @@ else:
     # print("Allowed")
 
 #Q26
-is_closed = False
-if not is_closed:
-    print("open")
+# is_closed = False
+# if not is_closed:
+#     print("open")
 
 #Q27
 # number= int(input("Enter a Number: "))
@@ -210,21 +210,20 @@ if not is_closed:
     # print("between 10 and 50")
 
 #Q29
-is_student = True
-has_id = True
-has_ticket = True
+# is_student = True
+# has_id = True
+# has_ticket = True
 
-if is_student and has_id and has_ticket:
-    print("Allowed")
+# if is_student and has_id and has_ticket:
+#     print("Allowed")
 
 #Q30
 age= int(input("Enter Your Age: "))
 marks= int(input("Enter your marks: "))
-has_id=True
-
-if age >= 18 and marks >= 40 and has_id:
+has_id= input("Do you have id (Yes/No):  ")
+if age >= 18 and marks >= 40 and has_id== "yes":
     print("Eligible")
+elif has_id== "no":
+    print("You Do not Have Valid id!!!")    
 else:
-    print("Not Eligible")    
-
-        
+    print("Not Eligible")

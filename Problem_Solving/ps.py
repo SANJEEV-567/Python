@@ -237,13 +237,106 @@
 #     print("Above 100")
 
 #Q20
-a = float(input("Enter the length of side a: "))
-b = float(input("Enter the length of side b: "))
-c = float(input("Enter the length of side c: "))
-if (a + b > c) and (a + c > b) and (b + c > a):
-    print("The three sides can form a triangle.")
+# a = float(input("Enter the length of side a: "))
+# b = float(input("Enter the length of side b: "))
+# c = float(input("Enter the length of side c: "))
+# if (a + b > c) and (a + c > b) and (b + c > a):
+#     print("The three sides can form a triangle.")
+# else:
+#     print("The three sides cannot form a triangle.")
+
+#Q21
+# a= int(input("Enter Side a: "))
+# b= int(input("Enter Side b: "))
+# c= int(input("Enter Side c: "))
+# if (a + b > c) and (a + c > b) and (b + c > a):
+#     print("Triangle is Valid.")
+#     if a==b==c:
+#         print("Triangle is Equilateral")
+#     elif a==b!=c or a==c!=b or a!=b==c:
+#         print("Triangle is Isosceles")
+#     else:
+#         print("Triangle is Scalene")   
+# else:
+#     print("Invalid Sides!!!")
+
+#Q22
+# account_balance= int(input("Enter Your Account Balance: "))
+# withdrawal_amount= int(input("Withdraw Your Amount: "))    
+# if withdrawal_amount > 0:
+#     if withdrawal_amount%100==0:
+#         if withdrawal_amount < account_balance:
+#             if withdrawal_amount <= account_balance-500:
+#                 print("Withdrawal Successful")
+#                 if account_balance-withdrawal_amount:
+#                     print(f"Remaining balance: {account_balance-withdrawal_amount}")
+#                 else:
+#                     print("At least Rs.500 Must Remain")
+#         else:           
+#             print("Insufficient Balance!!!")      
+#     else:
+#         print("Take a Amount Which is Divisible by 100.") 
+# else:
+#     print("Invalid Amount!!!")        
+
+#Q23
+# username= input("Enter Your Username: ")
+# password= input("Enter Your Password: ")
+# if username=="admin":
+#     if password=="python123":
+#         print("Login Successful")
+#     else:
+#         print("Wrong Password!!!")
+# else:
+#     print("User not found!!!")                
+
+#Q24
+original_amount = float(input("Enter purchase amount: "))
+
+if original_amount < 500:
+    discount_percentage = 0
+elif original_amount <= 999:
+    discount_percentage = 5
+elif original_amount <= 1999:
+    discount_percentage = 10
+elif original_amount <= 4999:
+    discount_percentage = 15
 else:
-    print("The three sides cannot form a triangle.")
+    discount_percentage = 20
+
+discount_amount = original_amount * (discount_percentage / 100)
+final_amount = original_amount - discount_amount
+
+print(f"Original amount: Rs.{original_amount}")
+print(f"Discount percentage: Rs.{discount_percentage}%")
+print(f"Discount amount: Rs.{discount_amount}")
+print(f"Final amount: Rs.{final_amount}")
+
+#Q25
+sub1 = int(input("Enter marks for Subject 1: "))
+sub2 = int(input("Enter marks for Subject 2: "))
+sub3 = int(input("Enter marks for Subject 3: "))
+
+if sub1 < 0 or sub1 > 100 or sub2 < 0 or sub2 > 100 or sub3 < 0 or sub3 > 100:
+    print("Invalid input! Marks must be between 0 and 100.")
+
+elif sub1 < 35 or sub2 < 35 or sub3 < 35:
+    print("Result: Fail")
+
+else:
+    average = (sub1 + sub2 + sub3) / 3
+    print("Average Marks:", average)
+    
+    if average >= 75:
+        print("Grade: Distinction")
+    elif average >= 60:
+        print("Grade: First Class")
+    elif average >= 50:
+        print("Grade: Second Class")
+    else:
+        print("Grade: Pass")
+
+
 
 
 

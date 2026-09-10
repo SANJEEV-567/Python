@@ -291,50 +291,89 @@
 #     print("User not found!!!")                
 
 #Q24
-original_amount = float(input("Enter purchase amount: "))
+# original_amount = float(input("Enter purchase amount: "))
 
-if original_amount < 500:
-    discount_percentage = 0
-elif original_amount <= 999:
-    discount_percentage = 5
-elif original_amount <= 1999:
-    discount_percentage = 10
-elif original_amount <= 4999:
-    discount_percentage = 15
-else:
-    discount_percentage = 20
+# if original_amount < 500:
+#     discount_percentage = 0
+# elif original_amount <= 999:
+#     discount_percentage = 5
+# elif original_amount <= 1999:
+#     discount_percentage = 10
+# elif original_amount <= 4999:
+#     discount_percentage = 15
+# else:
+#     discount_percentage = 20
 
-discount_amount = original_amount * (discount_percentage / 100)
-final_amount = original_amount - discount_amount
+# discount_amount = original_amount * (discount_percentage / 100)
+# final_amount = original_amount - discount_amount
 
-print(f"Original amount: Rs.{original_amount}")
-print(f"Discount percentage: Rs.{discount_percentage}%")
-print(f"Discount amount: Rs.{discount_amount}")
-print(f"Final amount: Rs.{final_amount}")
+# print(f"Original amount: Rs.{original_amount}")
+# print(f"Discount percentage: Rs.{discount_percentage}%")
+# print(f"Discount amount: Rs.{discount_amount}")
+# print(f"Final amount: Rs.{final_amount}")
 
-#Q25
-sub1 = int(input("Enter marks for Subject 1: "))
-sub2 = int(input("Enter marks for Subject 2: "))
-sub3 = int(input("Enter marks for Subject 3: "))
+# #Q25
+# sub1 = int(input("Enter marks for Subject 1: "))
+# sub2 = int(input("Enter marks for Subject 2: "))
+# sub3 = int(input("Enter marks for Subject 3: "))
 
-if sub1 < 0 or sub1 > 100 or sub2 < 0 or sub2 > 100 or sub3 < 0 or sub3 > 100:
-    print("Invalid input! Marks must be between 0 and 100.")
+# if sub1 < 0 or sub1 > 100 or sub2 < 0 or sub2 > 100 or sub3 < 0 or sub3 > 100:
+#     print("Invalid input! Marks must be between 0 and 100.")
 
-elif sub1 < 35 or sub2 < 35 or sub3 < 35:
-    print("Result: Fail")
+# elif sub1 < 35 or sub2 < 35 or sub3 < 35:
+#     print("Result: Fail")
 
-else:
-    average = (sub1 + sub2 + sub3) / 3
-    print("Average Marks:", average)
+# else:
+    # average = (sub1 + sub2 + sub3) / 3
+    # print("Average Marks:", average)
     
-    if average >= 75:
-        print("Grade: Distinction")
-    elif average >= 60:
-        print("Grade: First Class")
-    elif average >= 50:
-        print("Grade: Second Class")
-    else:
-        print("Grade: Pass")
+    # if average >= 75:
+    #     print("Grade: Distinction")
+    # elif average >= 60:
+    #     print("Grade: First Class")
+    # elif average >= 50:
+    #     print("Grade: Second Class")
+    # else:
+    #     print("Grade: Pass")
+
+#Q26
+date_input = input("Enter date (DD/MM/YYYY): ")
+
+parts = date_input.split('/')
+day = int(parts[0])
+month = int(parts[1])
+year = int(parts[2])
+
+is_leap = (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+is_valid = True
+
+if month < 1 or month > 12:
+    is_valid = False
+elif day < 1:
+    is_valid = False
+
+elif month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
+    if day > 31:
+        is_valid = False
+
+elif month == 4 or month == 6 or month == 9 or month == 11:
+    if day > 30:
+        is_valid = False
+
+elif month == 2:
+    if is_leap and day > 29:
+        is_valid = False
+    elif not is_leap and day > 28:
+        is_valid = False
+
+if is_valid:
+    print("Valid")
+else:
+    print("Invalid")
+
+
+
+
 
 
 

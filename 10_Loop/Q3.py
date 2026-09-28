@@ -1,3 +1,9 @@
-# Question 3
-for i in range(1,11):
+# # Question 3
+# for i in range(1,11):
+#     print(i)
+
+#while
+i=1
+while i<=10:
     print(i)
+    i+=1

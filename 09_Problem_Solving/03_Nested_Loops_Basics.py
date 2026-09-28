@@ -1,219 +1,539 @@
-#Q11
-for i in range(6):
-    a=64
-    for j in range(i):
-        a+=1
-        print(chr(a),end=" ")
-    print()    
+# #Q11
+# for i in range(6):
+#     a=64
+#     for j in range(i):
+#         a+=1
+#         print(chr(a),end=" ")
+#     print()    
 
-#Q12
-a=64
-for i in range(1,6):
-    a+=1
-    for j in range(i):
-        print(chr(a),end=" ")
+# #Q12
+# a=64
+# for i in range(1,6):
+#     a+=1
+#     for j in range(i):
+#         print(chr(a),end=" ")
+#     print()
+
+# #Q13
+# for i in range(1, 10, 2):
+#     for j in range(1, i + 1, 2):
+#         print(j, end=" ")
+#     print() 
+
+# #Q14
+# for i in range(2, 11, 2):
+#     for j in range(2, i + 1, 2):
+#         print(j, end=" ")
+#     print()  
+
+# #Q15
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print("*",end=" ")
+#     print()  
+
+# #Q16
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print(j,end=" ")
+#     print()       
+
+# #Q17
+# a=0
+# for i in range(3):
+#     for j in range(3):
+#         a+=1
+#         print(a,end=" ")
+#     print()    
+
+# #Q18
+# a=0
+# for i in range(4):
+#     for j in range(5):
+#         a+=1
+#         print(a,end=" ")
+#     print()  
+
+# #Q19
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print((i,j),end="") 
+#     print()
+
+# #Q20
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print(i,j)
+# #Q21
+# for i in range(1,11):
+#     for j in range(1,11):        
+#         print(i*j,end=" ")
+#     print()    
+
+# #Q22
+# for i in range(6):
+#     for j in range(i):
+#         print(i,end=" ")
+#     print()        
+
+# #Q23
+# for i in range(6,0,-1):
+#     for j in range(1,i):
+#         print(j,end="")
+#     print()    
+
+# #Q24
+# for i in range(1,6):
+#     for j in range(5,i-1,-1):
+#         print(j, end="")
+#     print()    
+
+# #Q25
+# for i in range(1,6):
+#     for j in range(5):
+#         print(i,end="")
+#     print()          
+
+# #Q5
+# for i in range(1,5):
+#     for j in range(4,i-1,-1):
+#         print("*",end="")
+#     print() 
+# #Q6
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print(j,end="")
+#     print()   
+
+# #Q7
+# for i in range(1,6):
+#     for j in range(i):
+#         print(i,end="")
+#     print()
+
+# #Q8
+# for i in range(1,6):
+#     for j in range(1,11):
+#         print(i*j,end=" ")
+#     print()  
+
+# #Q9
+
+# for i in range(1,4):
+#     for j in range(1,6):
+#         print(i*j,end=" ")
+#     print()   
+
+# #Q10
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print(j**2,end=" ")
+#     print()     
+
+# #Q11
+# for i in range(1,6):
+#     a=64
+#     for j in range(i):
+#         a+=1
+#         print(chr(a),end=" ")
+#     print()           
+
+# #Q12
+# a=64
+# for i in range(1,6):
+#     a+=1
+#     for j in range(i):
+#         print(chr(a),end=" ")
+#     print()  
+
+# #Q13
+# for i in range(1,10,2):
+#     for j in range(1,i+1,2):
+#         print(j,end="")   
+#     print()    
+
+# #Q14
+# for i in range(2,11,2):
+#     for j in range(2,i+1,2):
+#         print(j,end=" ")
+#     print() 
+
+# #Q15
+# for i in range(5):
+#     for j in range(5):
+#         print("*",end=" ")
+#     print() 
+
+# #Q16    
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print(j,end=" ")
+#     print()  
+
+# #Q17
+# a=0
+# for i in range(3):
+#     for j in range(3):
+#         a+=1 
+#         print(a,end=" ")
+#     print()  
+
+# #Q18
+# a=0
+# for i in range(5):
+#     for j in range(5):
+#         a+=1
+#         print(a,end=" ")
+#     print()  
+
+# #Q19
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print((i,j),end=" ")
+#     print()  
+
+# #Q20
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print(i,j) 
+
+# #Q13 M-2
+# n=int(input("Enter No of Rows:"))
+# for i in range(n+1):
+#     for j in range(2*i+1):
+#         if j%2!=0:
+#             print(j,end=" ")
+#     print()        
+
+# #Q14 M-2
+# n=int(input("Enter No of Rows:"))
+# for i in range(1,n+1):
+#     for j in range(1,2*i):
+#         if j%2==0:
+#             print(j,end=" ")
+#     print()        
+
+###Same Question with using While Loops
+
+#Q1
+row=1
+
+while row<=3:
+    column=1
+
+    while column <=4:
+        print("*",end="")
+        column =column+1
+
     print()
+    row = row+1    
 
-#Q13
-for i in range(1, 10, 2):
-    for j in range(1, i + 1, 2):
-        print(j, end=" ")
-    print() 
+#Q2
+row=1
 
-#Q14
-for i in range(2, 11, 2):
-    for j in range(2, i + 1, 2):
-        print(j, end=" ")
-    print()  
+while row<=3:
+    column=1
 
-#Q15
-for i in range(1,6):
-    for j in range(1,6):
+    while column<=3:
+        print(column,end=" ")
+        column=column+1
+
+    print()
+    row= row+1    
+
+#Q3
+row=1
+
+while row<=3:
+    column=1
+
+    while column<=3:
+        print(row,end=" ")
+        column=column+1
+
+    print()
+    row=row +1   
+
+#Q4
+row=1
+
+while row<=5:
+    column=1
+
+    while column<=row:
         print("*",end=" ")
-    print()  
+        column=column+1
 
-#Q16
-for i in range(1,6):
-    for j in range(1,6):
-        print(j,end=" ")
-    print()       
-
-#Q17
-a=0
-for i in range(3):
-    for j in range(3):
-        a+=1
-        print(a,end=" ")
-    print()    
-
-#Q18
-a=0
-for i in range(4):
-    for j in range(5):
-        a+=1
-        print(a,end=" ")
-    print()  
-
-#Q19
-for i in range(1,4):
-    for j in range(1,4):
-        print((i,j),end="") 
     print()
-
-#Q20
-for i in range(1,4):
-    for j in range(1,4):
-        print(i,j)
-#Q21
-for i in range(1,11):
-    for j in range(1,11):        
-        print(i*j,end=" ")
-    print()    
-
-#Q22
-for i in range(6):
-    for j in range(i):
-        print(i,end=" ")
-    print()        
-
-#Q23
-for i in range(6,0,-1):
-    for j in range(1,i):
-        print(j,end="")
-    print()    
-
-#Q24
-for i in range(1,6):
-    for j in range(5,i-1,-1):
-        print(j, end="")
-    print()    
-
-#Q25
-for i in range(1,6):
-    for j in range(5):
-        print(i,end="")
-    print()          
+    row=row+1
 
 #Q5
-for i in range(1,5):
-    for j in range(4,i-1,-1):
-        print("*",end="")
-    print() 
+row=1
+
+while row<=5:
+    column=5
+
+    while column>=row:
+        print("*",end=" ")
+        column=column-1
+
+    print()
+    row=row+1
+
 #Q6
-for i in range(1,6):
-    for j in range(1,i+1):
-        print(j,end="")
-    print()   
+row=1
+
+while row<=5:
+    column=1
+
+    while column<=row:
+        print(column,end=" ")
+        column+=1
+
+    print()
+    row+=1    
 
 #Q7
-for i in range(1,6):
-    for j in range(i):
-        print(i,end="")
+row=1
+
+while row<=5:
+    column=1
+
+    while column<=row:
+        print(row,end=" ")
+        column+=1
+
     print()
+    row+=1    
 
 #Q8
-for i in range(1,6):
-    for j in range(1,11):
-        print(i*j,end=" ")
-    print()  
+row=1
 
-#Q9
+while row<=5:
+    column=1
 
-for i in range(1,4):
-    for j in range(1,6):
-        print(i*j,end=" ")
-    print()   
+    while column<=10:
+        print(row*column,end=" ")
+        column+=1
+
+    print()
+    row+=1    
+
+#Q9    
+row=1
+
+while row<=3:
+    column=1
+
+    while column<=5:
+        print(row*column,end=" ")
+        column+=1
+
+    print()
+    row+=1  
 
 #Q10
-for i in range(1,6):
-    for j in range(1,6):
-        print(j**2,end=" ")
-    print()     
+row=1
+
+while row<=5:
+    column=1
+
+    while column<=5:
+        print(column**2,end=" ")
+        column+=1
+
+    print()
+    row+=1
 
 #Q11
-for i in range(1,6):
+row=1
+
+while row<=5:
     a=64
-    for j in range(i):
+    column=1
+
+    while column<=row:
         a+=1
         print(chr(a),end=" ")
-    print()           
+        column+=1
+
+    print()
+    row+=1   
 
 #Q12
+row=1
 a=64
-for i in range(1,6):
+while row<=5:
     a+=1
-    for j in range(i):
+    column=1
+
+    while column<=row:
         print(chr(a),end=" ")
-    print()  
+        column+=1
+
+    print()
+    row+=1        
 
 #Q13
-for i in range(1,10,2):
-    for j in range(1,i+1,2):
-        print(j,end="")   
-    print()    
+row=1
+
+while row<=9:
+    column=1
+
+    while column<=row:
+        if column%2!=0:
+            print(column,end=" ")   
+        column+=1
+    print()
+    row+=2   
 
 #Q14
-for i in range(2,11,2):
-    for j in range(2,i+1,2):
-        print(j,end=" ")
-    print() 
+row=0
+
+while row<=10:
+    column=1
+
+    while column<=row:
+        if column%2==0:
+            print(column,end=" ")   
+        column+=1
+    print()
+    row+=2
 
 #Q15
-for i in range(5):
-    for j in range(5):
-        print("*",end=" ")
-    print() 
+row=1
 
-#Q16    
-for i in range(1,6):
-    for j in range(1,6):
-        print(j,end=" ")
-    print()  
+while row<=5:
+    column=1
+
+    while column<=5:
+        print("*",end=" ")   
+        column+=1
+    print()
+    row+=1
+
+#Q16
+row=1
+
+while row<=5:
+    column=1
+
+    while column<=5:
+        print(column,end=" ")   
+        column+=1
+    print()
+    row+=1   
 
 #Q17
+row=1
 a=0
-for i in range(3):
-    for j in range(3):
-        a+=1 
-        print(a,end=" ")
-    print()  
+while row<=3:
+    column=1
+
+    while column<=3:
+        a+=1
+        print(a,end=" ")   
+        column+=1
+    print()
+    row+=1
 
 #Q18
+row=1
 a=0
-for i in range(5):
-    for j in range(5):
+while row<=4:
+    column=1
+
+    while column<=5:
         a+=1
-        print(a,end=" ")
-    print()  
+        print(a,end=" ")   
+        column+=1
+    print()
+    row+=1    
 
 #Q19
-for i in range(1,4):
-    for j in range(1,4):
-        print((i,j),end=" ")
-    print()  
+row=1
+
+while row<=3:
+    column=1
+
+    while column<=3:
+        print((row,column),end=" ")   
+        column+=1
+    print()
+    row+=1    
 
 #Q20
-for i in range(1,4):
-    for j in range(1,4):
-        print(i,j) 
+row=1
 
-#Q13 M-2
-n=int(input("Enter No of Rows:"))
-for i in range(n+1):
-    for j in range(2*i+1):
-        if j%2!=0:
-            print(j,end=" ")
-    print()        
+while row<=3:
+    column=1
 
-#Q14 M-2
-n=int(input("Enter No of Rows:"))
-for i in range(1,n+1):
-    for j in range(1,2*i):
-        if j%2==0:
-            print(j,end=" ")
-    print()        
-                
-    
+    while column<=3:
+        print(row,column)   
+        column+=1
+    row+=1    
 
+#Q21
+row=1
 
+while row<=10:
+    column=1
 
+    while column<=10:
+        print(row*column,end=" ")
+        column+=1
+
+    print()
+    row+=1      
+
+#Q22
+row=1
+
+while row<=5:
+    column=1
+
+    while column<=row:
+        print(row,end=" ")
+        column+=1
+
+    print()
+    row+=1 
+
+#Q23
+row=5
+
+while row>=1:
+    column=1
+
+    while column<=row:
+        print(column,end=" ")
+        column+=1
+
+    print()
+    row-=1       
+
+#Q24
+row=1
+
+while row<=5:
+    column=5
+
+    while column>=row:
+        print(column,end=" ")
+        column-=1
+
+    print()
+    row+=1                 
+
+#Q25    
+row=1
+
+while row<=5:
+    column=1
+
+    while column<=5:
+        print(row,end=" ")
+        column+=1
+
+    print()
+    row+=1          

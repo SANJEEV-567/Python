@@ -1,5 +1,9 @@
 # Question 21
-name = input("Enter Your Name:")
+# name = input("Enter Your Name:")
 
-for character in name:
-    print(character)
+# for character in name:
+#     print(character)
+
+# #While
+# name = input("Enter Your Name:")
+

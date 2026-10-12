@@ -5,5 +5,6 @@
 #     print(character)
 
 # #While
-# name = input("Enter Your Name:")
+name = input("Enter Your Name:")
+char=""
 

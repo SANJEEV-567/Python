@@ -5,7 +5,7 @@
 #     m=m*i
 # print("Your Calculation:",m)
 
-#Q20
+#Q20 while
 n= int(input("Enter a Number:"))
 i=0
 multiply=1

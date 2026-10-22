@@ -181,4 +181,119 @@ print("Bill (keyword):", bill(item="Pen", price=25, quantity=4))
 # Default values
 print("Bill (defaults):", bill("Notebook"))
 
+#Q21: Define analyze_number(number) that returns three values: the absolute value, whether it is even, and the number of digits. Do not use abs(); assume the input is an integer.
+def analyze_number(number):
+    if number>=0:
+        if number%2==0:
+            a="Even"
+            b=f"No. of digits: {len(str(number))}"
+            return number,a,b
+        else:
+            a="Odd"
+            b=f"No. of digits: {len(str(number))}"
+            return number,a,b
+    else:
+        n=number*(-1)
+        if n%2==0:
+            a="Even"
+            b=f"No. of digits: {len(str(n))}"
+            return n,a,b
+        else:
+            a="Odd"
+            b=f"No. of digits: {len(str(n))}"
+            return n,a,b
+
+print(analyze_number(number=int(input("Enter a Number:"))) )   #Here we can do Multiple Assignment to destructure tupple    
+
+#Q22
+def calculate_stats(a, b, c):
+    sum=a+b+c
+    if a>b and a>c:
+        if b>c:
+            return f"{c} is Smallest And {a} is Largest Number And Sum = {sum}"
+        else:
+            return f"{b} is Smallest And {a} is Largest Number And Sum = {sum}"
+    if b>a and b>c:
+        if a>c:
+            return f"{c} is Smallest And {b} is Largest Number And Sum = {sum}"
+        else:
+            return f"{a} is Smallest And {b} is Largest Number And Sum = {sum}"    
+    if c>a and c>b:
+        if b>a:
+            return f"{a} is Smallest And {c} is Largest Number And Sum = {sum}"
+        else:
+            return f"{b} is Smallest And {c} is Largest Number And Sum = {sum}" 
+
+print(calculate_stats(10,20,30))
+
+#Q23
+def make_sentence(subject, verb, object):
+    sen= f"{subject} is {verb} on {object}"
+    return sen
+
+print(make_sentence(verb="Sleeping",subject="Suman",object="Desk"))
+
+#Q24
+def apply_discount(price, discount=0): 
+    discountprice=price*(discount/100)
+    finalprice=price-discountprice
+    return finalprice
+
+print(apply_discount(500,10))
+
+#Q26
+def calculate_pay(hours,rate=200,bonus=0):
+    return hours*rate+bonus
+
+print(calculate_pay(6,bonus=50,rate=200))
+print(calculate_pay(8,400,20))
+
+#Q27
+def compare(a,b):
+    if a>b:
+        g="A is greater"
+        diff=a-b
+    elif b>a:
+        g="B is greater"
+        diff=b-a
+    else:
+        g="Equal"
+        diff=a-b
+    return f"{g} and  Absolute Difference is:{diff}"           
+
+print(compare(7,5))
+
+#Q28
+def convert_temperature(value, scale="C"):
+    if scale.upper() == "C":
+        return (value * 9/5) + 32  # Celsius to Fahrenheit
+    elif scale.upper() == "F":
+        return (value - 32) * 5/9  # Fahrenheit to Celsius
+
+print(convert_temperature(56,"c"))
+
+#Q29
+def calculate_result(marks, passing_marks=35):
+    if marks>=passing_marks:
+        return "Pass"
+    else:
+        return "Fail"
+print(calculate_result(75))    
+#Q30
+def order_summary(item, quantity=1, price=100, delivery_fee=40):
+    totalcost=quantity*price+delivery_fee
+    return f"Item Name: {item} and Total Cost: {totalcost}"
+
+print(order_summary("Maggi",4,20,delivery_fee=60))
+
+
+
+
+
+
+
+
+
+
+
 

@@ -58,6 +58,19 @@
 #             print(f"No Common Multiple below {limit} except {a}") 
 
 #Q55
+# n=int(input("Enter a Number:"))
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if 
+
+#Q56
+# n=int(input("Enter a Number:"))
+# t=int(input("Enter a Target Number:"))
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if i+j==t:
+#             print(i,j)
+
 
 
 
@@ -69,7 +82,7 @@
 
 
 
-#Q53
+
        
 
 

@@ -16,6 +16,7 @@
 # for i in sen:
 #     for j in sen:
 #         if i.startswith(i) == j.startswith(j) and i!=j:
+#             print
     
 #Q39
 

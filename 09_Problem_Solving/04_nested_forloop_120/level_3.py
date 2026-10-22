@@ -38,16 +38,15 @@
 #             count+=1
 # print(count) 
 
-#Q26
-# char=input("Enter a Word:").upper()
-# count=0
-# for i in char:
-#     for j in char:
-#         if i==j:
-#             count+=1
-            
-#     else:
-#         print(f"{i} = {count}")    
+#Q26 ###############################
+char="banana".upper()
+count=0
+for i in char:
+    for j in char:
+        if i==j:
+            count+=1  
+    else:
+        print(f"{i} = {count}")    
 
 
 #Q27
